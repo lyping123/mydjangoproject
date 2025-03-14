@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Processed Image</title>
+</head>
+<body>
+    <h2>Original Image</h2>
+    <img src="{{ image_obj.image.url }}" width="300">
+    
+    <h2>Processed Image</h2>
+    <img src="{{ image_obj.processed_image.url }}" width="300">
+
+    <br><a href="{% url 'upload' %}">Upload Another</a>
+</body>
+</html>
